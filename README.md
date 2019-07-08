@@ -1,6 +1,8 @@
 # FOVE GazePlotSample
 Make GazePlot by FOVE in Unity.
 
+https://raw.githubusercontent.com/gatosyocora/FoveGazePlotSample/image/sample.png
+
 fecthed from https://github.com/FoveHMD/FoveUnitySample
 
 ## Environment
