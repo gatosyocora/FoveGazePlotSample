@@ -1,6 +1,15 @@
-# FOVE Unity Sample
-This simple project demonstrates how to use the FOVE Unity plugin. It includes objects which react to gaze and objects which track to the user's gaze. (We do not recomment using the latter in released game, but seeing the example is likely worthwhile for many kinds of developers.)
+# FOVE GazePlotSample
+Make GazePlot by FOVE in Unity.
 
-## Requirements
-* Unity 5.4.5f1 or newer
-* FOVE VR 0.12.1 or newer
+fecthed from https://github.com/FoveHMD/FoveUnitySample
+
+## Environment
+* Unity 2018.1.6f1
+
+## How to use
+Press Keys
+C: Color Reset
+X: Show plot to  participant (Toggle)
+Space: Change Monitor View (Cam1, 2, 3)
+R: Reset plot
+S: Start/Stop plot
