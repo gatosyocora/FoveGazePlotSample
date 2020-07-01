@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 
 public class SceneManager : MonoBehaviour {
@@ -99,8 +102,6 @@ public class SceneManager : MonoBehaviour {
 	}
 
     // GameViewの解像度のサイズになるので注意
-    // Unityプロジェクト内に書き出した場合は書き出し後にAssetDatabase.Refreshが走らないと
-    // 画像がProjectタブに表示されないので注意
     private void ScreenShot(Camera camera, string path)
     {
         var screenShot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
@@ -117,5 +118,10 @@ public class SceneManager : MonoBehaviour {
         Destroy(screenShot);
         
         File.WriteAllBytes(path, bytes);
+#if UNITY_EDITOR
+        // Unityプロジェクト内に書き出した場合は書き出し後にAssetDatabase.Refreshが走らないと
+        // 画像がProjectタブに表示されないので注意
+        AssetDatabase.Refresh();
+#endif
     }
 }
