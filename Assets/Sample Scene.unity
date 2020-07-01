@@ -400,6 +400,7 @@ MonoBehaviour:
   - {fileID: 171134967}
   playerCam: {fileID: 271061184}
   lRendSup: {fileID: 717478755}
+  screenShootOutputPath: 
 --- !u!4 &146915802
 Transform:
   m_ObjectHideFlags: 0
